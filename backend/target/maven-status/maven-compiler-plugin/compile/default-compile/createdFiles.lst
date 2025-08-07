@@ -1,0 +1,14 @@
+com\cybersecurity\riskscoring\service\MachineLearningService.class
+com\cybersecurity\riskscoring\service\MachineLearningService$IsolationForest.class
+com\cybersecurity\riskscoring\config\SecurityConfig.class
+com\cybersecurity\riskscoring\service\RealTimeNotificationService.class
+com\cybersecurity\riskscoring\repository\EntityRepository.class
+com\cybersecurity\riskscoring\controller\SimpleApiController.class
+com\cybersecurity\riskscoring\service\AdvancedMLService.class
+com\cybersecurity\riskscoring\entity\EntityModel.class
+com\cybersecurity\riskscoring\service\EntityDataService.class
+com\cybersecurity\riskscoring\service\RealTimeUpdateService.class
+com\cybersecurity\riskscoring\RiskScoringApplication.class
+com\cybersecurity\riskscoring\service\AdvancedMLService$EnsembleRandomForest.class
+com\cybersecurity\riskscoring\service\MachineLearningService$RandomForest.class
+com\cybersecurity\riskscoring\service\AdvancedMLService$AdaptiveIsolationForest.class

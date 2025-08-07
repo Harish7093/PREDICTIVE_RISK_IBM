@@ -1,0 +1,10 @@
+D:\IBM2\IBM\backend\src\main\java\com\cybersecurity\riskscoring\service\EntityDataService.java
+D:\IBM2\IBM\backend\src\main\java\com\cybersecurity\riskscoring\entity\EntityModel.java
+D:\IBM2\IBM\backend\src\main\java\com\cybersecurity\riskscoring\service\AdvancedMLService.java
+D:\IBM2\IBM\backend\src\main\java\com\cybersecurity\riskscoring\service\RealTimeUpdateService.java
+D:\IBM2\IBM\backend\src\main\java\com\cybersecurity\riskscoring\service\RealTimeNotificationService.java
+D:\IBM2\IBM\backend\src\main\java\com\cybersecurity\riskscoring\RiskScoringApplication.java
+D:\IBM2\IBM\backend\src\main\java\com\cybersecurity\riskscoring\repository\EntityRepository.java
+D:\IBM2\IBM\backend\src\main\java\com\cybersecurity\riskscoring\config\SecurityConfig.java
+D:\IBM2\IBM\backend\src\main\java\com\cybersecurity\riskscoring\service\MachineLearningService.java
+D:\IBM2\IBM\backend\src\main\java\com\cybersecurity\riskscoring\controller\SimpleApiController.java
