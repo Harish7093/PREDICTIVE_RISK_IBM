@@ -417,6 +417,11 @@ const RiskAnalysis: React.FC = () => {
                       : 'bg-blue-600 hover:bg-blue-700 text-white'
                   }`}
                   disabled={rec.isImplemented}
+                  onClick={() => {
+                    if (!rec.isImplemented) {
+                      setRecommendations((prev) => prev.map(r => r.id === rec.id ? { ...r, isImplemented: true } : r));
+                    }
+                  }}
                 >
                   {rec.isImplemented ? 'Implemented' : 'Implement'}
                 </button>

@@ -132,6 +132,38 @@ const EntityList: React.FC = () => {
         </button>
       </div>
 
+      {/* Entity Details Drawer/Modal */}
+      {selectedEntity && (
+        <div className="fixed inset-0 bg-black bg-opacity-30 flex items-center justify-center z-50">
+          <div className="bg-white rounded-xl shadow-lg p-8 w-full max-w-md relative">
+            <button
+              className="absolute top-2 right-2 text-gray-500 hover:text-gray-800"
+              onClick={() => setSelectedEntity(null)}
+            >
+              &times;
+            </button>
+            <h2 className="text-2xl font-bold mb-4">Entity Details</h2>
+            <div className="mb-2"><span className="font-semibold">Name:</span> {selectedEntity.name}</div>
+            <div className="mb-2"><span className="font-semibold">Entity ID:</span> {selectedEntity.entityId}</div>
+            <div className="mb-2"><span className="font-semibold">Department:</span> {selectedEntity.department}</div>
+            <div className="mb-2"><span className="font-semibold">Role:</span> {selectedEntity.role}</div>
+            <div className="mb-2"><span className="font-semibold">Risk Level:</span> {selectedEntity.riskLevel}</div>
+            <div className="mb-2"><span className="font-semibold">Risk Score:</span> {selectedEntity.riskScore}</div>
+            <div className="mb-2"><span className="font-semibold">Last Access:</span> {selectedEntity.lastAccessTime ? new Date(selectedEntity.lastAccessTime).toLocaleString() : 'N/A'}</div>
+            {assessmentResult && (
+              <div className="mt-4 p-4 bg-blue-50 rounded-lg">
+                <h3 className="font-semibold mb-2">Latest Risk Assessment</h3>
+                <div><span className="font-semibold">Combined Score:</span> {assessmentResult.combinedRiskScore}</div>
+                <div><span className="font-semibold">Isolation Forest:</span> {assessmentResult.isolationForestScore}</div>
+                <div><span className="font-semibold">Random Forest:</span> {assessmentResult.randomForestScore}</div>
+                <div><span className="font-semibold">Risk Level:</span> {assessmentResult.riskLevel}</div>
+                <div><span className="font-semibold">Timestamp:</span> {assessmentResult.timestamp ? new Date(assessmentResult.timestamp).toLocaleString() : ''}</div>
+              </div>
+            )}
+          </div>
+        </div>
+      )}
+
       {/* Search and Filters */}
       <div className="flex flex-col md:flex-row gap-4">
         <div className="flex-1 relative">
